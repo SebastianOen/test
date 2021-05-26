@@ -13,6 +13,11 @@
       format("svg");
 }
 /* Global */
+@media only screen and (min-width: 360px) {
+  .game-news {
+    display: none;
+  }
+}
 
 header {
   background-color: #262626;
