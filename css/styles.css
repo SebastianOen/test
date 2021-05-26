@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "Lovelo Black";
+  src: url("@{lovelo-font-path}/lovelo_black-webfont.eot");
+  src: url("@{lovelo-font-path}/lovelo_black-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("@{lovelo-font-path}/lovelo_black-webfont.woff2") format("woff2"),
+    url("@{lovelo-font-path}/lovelo_black-webfont.woff") format("woff"),
+    url("@{lovelo-font-path}/lovelo_black-webfont.ttf") format("truetype"),
+    url("@{lovelo-font-path}/lovelo_black-webfont.svg#loveloblack")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lovelo Line";
+  src: url("@{lovelo-font-path}/lovelo_line_bold-webfont.eot");
+  src: url("@{lovelo-font-path}/lovelo_line_bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("@{lovelo-font-path}/lovelo_line_bold-webfont.woff2") format("woff2"),
+    url("@{lovelo-font-path}/lovelo_line_bold-webfont.woff") format("woff"),
+    url("@{lovelo-font-path}/lovelo_line_bold-webfont.ttf") format("truetype"),
+    url("@{lovelo-font-path}/lovelo_line_bold-webfont.svg#loveloline_bold")
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lovelo Line";
+  src: url("@{lovelo-font-path}/lovelo_line_light-webfont.eot");
+  src: url("@{lovelo-font-path}/lovelo_line_light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("@{lovelo-font-path}/lovelo_line_light-webfont.woff2") format("woff2"),
+    url("@{lovelo-font-path}/lovelo_line_light-webfont.woff") format("woff"),
+    url("@{lovelo-font-path}/lovelo_line_light-webfont.ttf") format("truetype"),
+    url("@{lovelo-font-path}/lovelo_line_light-webfont.svg#loveloline_light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* Global */
 
 header {
@@ -9,24 +51,46 @@ header {
   overflow: "hidden";
   display: flex;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 footer {
   background-color: #262626;
+  height: 100px;
+  margin: 0;
+}
+
+footer ul {
+  display: flex;
+  color: #262626;
+}
+footer li {
+  flex: 1;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo {
+  position: relative;
+  top: -20px;
   height: 150px;
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: px;
 }
 
 header ul {
   display: flex;
   color: #262626;
   position: relative;
-  top: 50px;
+  top: 30px;
+}
+
+header a:hover {
+  color: #ff9649;
 }
 
 header li {
@@ -35,8 +99,15 @@ header li {
 }
 
 header a {
+  font-family: "Lovelo Line", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.active {
+  text-decoration: underline #ff9649;
 }
 
 body {
@@ -44,11 +115,33 @@ body {
   margin-right: 0;
 }
 
+.searchbar {
+  margin-top: 200px;
+  height: 30px;
+  width: 600px;
+  border: 1px solid #262626;
+  border-radius: 25px;
+  position: relative;
+  left: 500px;
+}
+
+.searchbar img {
+  height: 25px;
+  position: relative;
+  left: 560px;
+  top: 3px;
+}
+
 /* Homepage */
 
 .exciting-item {
-  padding-top: 150px;
+  width: 700px;
+  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7em;
+  color: #262626;
   position: relative;
+  left: 450px;
+  top: 5px;
   text-align: center;
   z-index: 1;
 }
@@ -62,17 +155,122 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -450px;
+  top: -500px;
+  margin-left: 10px;
+  max-width: 350px;
+  height: 800px;
 }
 
 .game-news__title {
+  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
   color: #262626;
   text-decoration: none;
   position: relative;
-  left: 130px;
+  left: 80px;
+}
+
+.game-news h2 {
+  margin-bottom: 0;
+  margin-top: 80px;
+}
+
+.game-news__title:hover {
+  text-decoration: underline #262626;
 }
 
 .game-news img {
   height: 200px;
   width: 330px;
+}
+
+.game-news__story {
+  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+}
+
+.upcoming-releases {
+  position: relative;
+  left: 440px;
+  top: -800px;
+  max-width: 700px;
+  height: 200px;
+}
+
+.upcoming-flex {
+  display: flex;
+}
+
+.upcoming-flex a {
+  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  color: #ff9649;
+  position: relative;
+  left: 450px;
+  z-index: 2;
+}
+
+.upcoming-flex a:hover {
+  cursor: pointer;
+  color: #262626;
+}
+
+.upcoming-releases__title {
+  position: relative;
+  left: 20px;
+  margin-bottom: -30px;
+}
+
+.upcoming-game {
+  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.upcoming-game h3,
+p {
+  margin-top: 2px;
+}
+
+.upcoming-game__img {
+  height: 190px;
+  width: 150px;
+}
+
+.item-flex {
+  display: flex;
+  position: relative;
+}
+
+.cta-register {
+  height: 200px;
+  width: 700px;
+  background-color: #262626;
+  position: relative;
+  top: -640px;
+  left: 450px;
+  color: #fff;
+  font-family: "Lovelo Line", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+.cta-register p,
+a {
+  position: relative;
+  top: 30px;
+  font-weight: bold;
+}
+
+.cta-register a {
+  background: #ff9649;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.cta-register a:hover {
+  background-color: #262626;
+  border: 3px solid #ff9649;
 }
