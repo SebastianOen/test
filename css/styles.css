@@ -122,6 +122,7 @@ main {
   top: 5px;
   text-align: center;
   z-index: 1;
+  text-transform: uppercase;
 }
 
 .exciting-item__img {
