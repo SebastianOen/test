@@ -57,7 +57,7 @@ header {
 footer {
   background-color: #262626;
   height: 100px;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 footer ul {
@@ -115,6 +115,11 @@ body {
   margin-right: 0;
 }
 
+main {
+  max-height: 1300px;
+  max-width: 287px;
+}
+
 .searchbar {
   margin-top: 200px;
   height: 30px;
@@ -155,7 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -500px;
+  top: -600px;
   margin-left: 10px;
   max-width: 350px;
   height: 800px;
@@ -205,8 +210,9 @@ body {
   font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
   color: #ff9649;
   position: relative;
-  left: 450px;
+  left: 410px;
   z-index: 2;
+  top: 20px;
 }
 
 .upcoming-flex a:hover {
@@ -218,6 +224,8 @@ body {
   position: relative;
   left: 20px;
   margin-bottom: -30px;
+  font-family: "Lovelo Black";
+  font-size: 22px;
 }
 
 .upcoming-game {
@@ -273,4 +281,15 @@ a {
 .cta-register a:hover {
   background-color: #262626;
   border: 3px solid #ff9649;
+}
+
+.advert {
+  position: relative;
+  top: -1725px;
+  left: 1200px;
+}
+
+.advert img {
+  height: 700px;
+  width: 320px;
 }
