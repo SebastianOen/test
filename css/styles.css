@@ -114,7 +114,7 @@ main {
 
 .exciting-item {
   width: 700px;
-  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.7em;
   color: #262626;
   position: relative;
@@ -140,12 +140,13 @@ main {
 }
 
 .game-news__title {
-  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2em;
   color: #262626;
   text-decoration: none;
   position: relative;
   left: 80px;
+  text-transform: uppercase;
 }
 
 .game-news h2 {
@@ -163,7 +164,7 @@ main {
 }
 
 .game-news__story {
-  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8em;
 }
 
@@ -180,7 +181,7 @@ main {
 }
 
 .upcoming-flex a {
-  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #ff9649;
   position: relative;
   left: 410px;
@@ -197,12 +198,13 @@ main {
   position: relative;
   left: 20px;
   margin-bottom: -30px;
-  font-family: "Lovelo Black";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
+  text-transform: uppercase;
 }
 
 .upcoming-game {
-  font-family: "Lovelo Black", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex: 1;
   padding: 15px;
   text-align: center;
@@ -232,7 +234,7 @@ p {
   top: -640px;
   left: 450px;
   color: #fff;
-  font-family: "Lovelo Line", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lovelo", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   text-align: center;
 }
